@@ -13,8 +13,8 @@ helm install runlot runlot/runlot --devel -n runlot --create-namespace -f values
 
 **A licence is required.** The chart installs nothing without the Secret that holds the
 licence file we issue per installation, and the master key you generate; we keep a copy of
-neither. Write to <hello@runlot.io> for one. An evaluation licence is free for 90 days on
-a single machine.
+neither. Ask for one at <https://runlot.io/en/contact>. An evaluation licence is free for
+90 days on a single machine.
 
 The install guide is at <https://docs.runlot.io/docs/self-hosted/helm>. The chart's
 annotated `values.yaml`, its `values.schema.json`, and the NOTES it prints after an install
