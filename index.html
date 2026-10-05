@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>charts.runlot.io</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  body { font: 16px/1.6 -apple-system, "Segoe UI", Roboto, sans-serif; max-width: 42rem; margin: 4rem auto; padding: 0 1.5rem; color: #1a1a1a; }
+  pre { background: #f4f4f4; padding: 1rem; overflow-x: auto; border-radius: 6px; }
+  code { font-size: 0.95em; }
+  a { color: #0b57d0; }
+</style>
+</head>
+<body>
+<h1>runlot Helm charts</h1>
+<p>This is the Helm chart index for <a href="https://runlot.io">runlot</a>. There is nothing to browse here; it exists for <code>helm</code>.</p>
+<pre><code>helm repo add runlot https://charts.runlot.io
+helm repo update
+helm search repo runlot --devel
+helm install runlot runlot/runlot --devel -n runlot --create-namespace -f values.yaml</code></pre>
+<p>The install guide is at <a href="https://docs.runlot.io/docs/self-hosted">docs.runlot.io/docs/self-hosted</a>. The chart's source is <a href="https://github.com/runlot/runlot/tree/main/charts/runlot">charts/runlot</a> in the runlot repository, and the files in this index are the same bytes attached to each <a href="https://github.com/runlot/runlot/releases">release</a>.</p>
+<p><a href="/index.yaml">index.yaml</a></p>
+</body>
+</html>
