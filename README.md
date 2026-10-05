@@ -28,6 +28,9 @@ on the Release — the Release holds the `SHA256SUMS` and its signature for the 
 GitHub Pages serves `main` as-is at `runlot.github.io/charts`; `charts.runlot.io` is a
 CNAME to it.
 
+The index is built with `helm repo index . --url https://charts.runlot.io`: the URL is the
+site root, and helm prefixes it to each chart's path under `charts/`.
+
 ## Versions
 
 Chart `version` and `appVersion` are the runlot tag without the leading `v`

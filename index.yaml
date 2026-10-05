@@ -6,7 +6,7 @@ entries:
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
     appVersion: 0.1.0-rc.110
-    created: "2026-10-05T20:26:04.30027+09:00"
+    created: "2026-10-05T20:34:05.833391+09:00"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -23,6 +23,6 @@ entries:
     - https://github.com/runlot/runlot
     type: application
     urls:
-    - https://charts.runlot.io/charts/charts/runlot-0.1.0-rc.110.tgz
+    - https://charts.runlot.io/charts/runlot-0.1.0-rc.110.tgz
     version: 0.1.0-rc.110
-generated: "2026-10-05T20:26:04.298209+09:00"
+generated: "2026-10-05T20:34:05.832041+09:00"
