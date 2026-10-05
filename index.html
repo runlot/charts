@@ -1,24 +1,302 @@
 <!doctype html>
+<!-- The page a browser lands on at charts.runlot.io. The host exists for helm, so
+     this is one screen: the brand, the four commands, and the one fact a reader
+     needs before running them — the chart installs nothing without a licence.
+
+     Everything visible comes from runlot's design tokens (web/packages/design/
+     tokens.css in runlot/runlot), inlined here because this site has no build.
+     The frame is .rl-frame from components.css: a hairline, square corners, and a
+     4px accent bracket on the top-left and bottom-right. The brand mark is the
+     path in brand/icon.svg, and the wordmark is a lowercase runlot at weight 700.
+     The two fonts sit beside this file; they are the same woff2 the three product
+     surfaces load. -->
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<title>charts.runlot.io</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-  body { font: 16px/1.6 -apple-system, "Segoe UI", Roboto, sans-serif; max-width: 42rem; margin: 4rem auto; padding: 0 1.5rem; color: #1a1a1a; }
-  pre { background: #f4f4f4; padding: 1rem; overflow-x: auto; border-radius: 6px; }
-  code { font-size: 0.95em; }
-  a { color: #0b57d0; }
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>charts.runlot.io — the runlot Helm chart repository</title>
+  <meta name="description" content="The Helm chart index for runlot on your own cluster. Add the repository, then install with the licence file we issued.">
+  <meta name="robots" content="index,follow">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="canonical" href="https://charts.runlot.io/">
+  <style>
+    @font-face {
+      font-family: "Pretendard Variable";
+      font-weight: 400 900;
+      font-display: swap;
+      src: url("fonts/pretendard-latin.woff2") format("woff2-variations");
+    }
+    @font-face {
+      font-family: "JetBrains Mono";
+      font-weight: 500;
+      font-display: swap;
+      src: url("fonts/jetbrains-mono-500.woff2") format("woff2");
+    }
+    :root {
+      --rl-surface: #fcfcfb;
+      --rl-surface-2: #f6f7f5;
+      --rl-band: #f1f3f0;
+      --rl-line: #d8dedb;
+      --rl-line-soft: #e7eae7;
+      --rl-ink: #15252b;
+      --rl-ink-soft: #536268;
+      --rl-ink-faint: #5f6e75;
+      --rl-accent: #0f6f8f;
+      --rl-accent-deep: #0b5670;
+      --rl-accent-tint: #e8f1f3;
+      --rl-accent-line: #a9cbd6;
+      --rl-warn-ink: #92400e;
+      --rl-warn-tint: #fdf6ec;
+      --rl-warn-line: #ecd4ac;
+      --rl-code-surface: #0d1b26;
+      --rl-code-ink: #d6e4ec;
+      --rl-code-ink-faint: #7ea3b6;
+      --rl-syntax-keyword: #7fc4e8;
+      --rl-syntax-comment: #93aebd;
+      --rl-radius: 4px;
+      --rl-tracking-display: -0.045em;
+      --rl-tracking-title: -0.03em;
+      --rl-tracking-body: -0.01em;
+      --rl-tracking-label: 0.08em;
+      --rl-font-sans: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", sans-serif;
+      --rl-font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      background: var(--rl-band);
+      color: var(--rl-ink);
+      font-family: var(--rl-font-sans);
+      font-size: 16px;
+      line-height: 1.6;
+      letter-spacing: var(--rl-tracking-body);
+      -webkit-font-smoothing: antialiased;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    a { color: var(--rl-accent); text-decoration: none; }
+    a:hover { color: var(--rl-accent-deep); text-decoration: underline; text-underline-offset: 2px; }
+
+    header {
+      border-bottom: 1px solid var(--rl-line);
+      background: var(--rl-surface);
+    }
+    .bar {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 0 24px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .brand { display: inline-flex; align-items: center; gap: 10px; color: var(--rl-ink); text-decoration: none; }
+    .brand:hover { text-decoration: none; }
+    .brand svg { display: block; }
+    .wordmark { font-size: 19px; font-weight: 700; letter-spacing: var(--rl-tracking-title); line-height: 1; }
+    .wordmark span { color: var(--rl-ink-faint); font-weight: 500; }
+    nav { display: flex; gap: 24px; font-size: 14.5px; }
+    nav a { color: var(--rl-ink-soft); }
+
+    main { flex: 1; }
+    .page { max-width: 1140px; margin: 0 auto; padding: 56px 24px 72px; }
+
+    .frame {
+      position: relative;
+      border: 1px solid var(--rl-line);
+      background: var(--rl-surface);
+      padding: 48px 56px;
+    }
+    .frame::before, .frame::after {
+      content: "";
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      border: 4px solid var(--rl-accent);
+      pointer-events: none;
+    }
+    .frame::before { top: -1px; left: -1px; border-right: 0; border-bottom: 0; }
+    .frame::after { right: -1px; bottom: -1px; border-left: 0; border-top: 0; }
+
+    .eyebrow {
+      font-family: var(--rl-font-mono);
+      font-weight: 500;
+      font-size: 12px;
+      letter-spacing: var(--rl-tracking-label);
+      text-transform: uppercase;
+      color: var(--rl-ink-faint);
+      margin: 0 0 14px;
+    }
+    h1 {
+      margin: 0 0 14px;
+      font-size: 40px;
+      font-weight: 800;
+      letter-spacing: var(--rl-tracking-display);
+      line-height: 1.1;
+    }
+    .lede { margin: 0; max-width: 60ch; font-size: 17px; color: var(--rl-ink-soft); }
+
+    .grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+      gap: 0;
+      margin-top: 40px;
+      border-top: 1px solid var(--rl-line);
+    }
+    .col { padding: 32px 0 0; }
+    .col + .col { border-left: 1px solid var(--rl-line); padding-left: 40px; }
+    h2 {
+      margin: 0 0 12px;
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: var(--rl-tracking-title);
+    }
+    p { margin: 0 0 12px; color: var(--rl-ink-soft); }
+
+    pre {
+      margin: 16px 0 0;
+      background: var(--rl-code-surface);
+      color: var(--rl-code-ink);
+      padding: 18px 20px;
+      font-family: var(--rl-font-mono);
+      font-weight: 500;
+      font-size: 13.5px;
+      line-height: 1.75;
+      overflow-x: auto;
+      border-radius: var(--rl-radius);
+    }
+    pre .p { color: var(--rl-accent-line); user-select: none; }
+    pre .c { color: var(--rl-syntax-comment); }
+    pre .k { color: var(--rl-syntax-keyword); }
+    code { font-family: var(--rl-font-mono); font-size: 0.92em; }
+    p code, li code {
+      background: var(--rl-surface-2);
+      border: 1px solid var(--rl-line-soft);
+      border-radius: 3px;
+      padding: 1px 5px;
+      color: var(--rl-ink);
+    }
+
+    .notice {
+      margin-top: 18px;
+      border: 1px solid var(--rl-warn-line);
+      background: var(--rl-warn-tint);
+      border-left: 4px solid var(--rl-warn-ink);
+      padding: 14px 16px;
+      color: var(--rl-ink);
+    }
+    .notice strong { color: var(--rl-warn-ink); }
+    .notice p { margin: 0; color: var(--rl-ink); }
+    .notice p + p { margin-top: 8px; }
+
+    dl { margin: 0; display: grid; grid-template-columns: max-content 1fr; gap: 8px 20px; font-size: 15px; }
+    dt { font-family: var(--rl-font-mono); font-weight: 500; font-size: 12.5px; letter-spacing: var(--rl-tracking-label); text-transform: uppercase; color: var(--rl-ink-faint); padding-top: 3px; }
+    dd { margin: 0; color: var(--rl-ink-soft); }
+
+    .foot {
+      margin-top: 40px;
+      padding-top: 16px;
+      border-top: 1px solid var(--rl-line);
+      display: flex;
+      justify-content: space-between;
+      font-family: var(--rl-font-mono);
+      font-weight: 500;
+      font-size: 12px;
+      letter-spacing: var(--rl-tracking-label);
+      text-transform: uppercase;
+      color: var(--rl-ink-faint);
+    }
+
+    footer { border-top: 1px solid var(--rl-line); background: var(--rl-surface); }
+    footer .bar { height: 56px; font-size: 13.5px; color: var(--rl-ink-faint); }
+    footer a { color: var(--rl-ink-soft); }
+
+    @media (max-width: 800px) {
+      .frame { padding: 32px 24px; }
+      h1 { font-size: 32px; }
+      .grid { grid-template-columns: 1fr; }
+      .col + .col { border-left: 0; border-top: 1px solid var(--rl-line); padding-left: 0; margin-top: 32px; }
+      nav { display: none; }
+    }
+  </style>
 </head>
 <body>
-<h1>runlot Helm charts</h1>
-<p>This is the Helm chart index for <a href="https://runlot.io">runlot</a>. There is nothing to browse here; it exists for <code>helm</code>.</p>
-<pre><code>helm repo add runlot https://charts.runlot.io
-helm repo update
-helm search repo runlot --devel
-helm install runlot runlot/runlot --devel -n runlot --create-namespace -f values.yaml</code></pre>
-<p>The install guide is at <a href="https://docs.runlot.io/docs/self-hosted">docs.runlot.io/docs/self-hosted</a>. The chart's source is <a href="https://github.com/runlot/runlot/tree/main/charts/runlot">charts/runlot</a> in the runlot repository, and the files in this index are the same bytes attached to each <a href="https://github.com/runlot/runlot/releases">release</a>.</p>
-<p><a href="/index.yaml">index.yaml</a></p>
+  <header>
+    <div class="bar">
+      <a class="brand" href="https://runlot.io" aria-label="runlot">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M20 9V4H4v16h6" stroke="var(--rl-accent)" stroke-width="4" stroke-linecap="square" stroke-linejoin="miter"/>
+        </svg>
+        <span class="wordmark">runlot <span>/ charts</span></span>
+      </a>
+      <nav>
+        <a href="https://docs.runlot.io/docs/self-hosted">Self-hosted docs</a>
+        <a href="https://github.com/runlot/runlot/tree/main/charts/runlot">Chart source</a>
+        <a href="https://github.com/runlot/runlot/releases">Releases</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="page">
+      <div class="frame">
+        <p class="eyebrow">Helm repository</p>
+        <h1>runlot on your own cluster.</h1>
+        <p class="lede">
+          This host is the Helm chart index for runlot. It serves <code>index.yaml</code> and one
+          packaged chart per release, and nothing else. The chart installs the control plane into
+          your Kubernetes cluster; the data nodes stay on machines you own.
+        </p>
+
+        <div class="grid">
+          <section class="col">
+            <h2>Add the repository</h2>
+            <p>Every runlot release is a release candidate today, so <code>--devel</code> is needed to see them.</p>
+<pre><span class="p">$</span> helm repo add runlot https://charts.runlot.io
+<span class="p">$</span> helm repo update
+<span class="p">$</span> helm search repo runlot --devel
+<span class="p">$</span> helm install runlot runlot/runlot --devel \
+    -n runlot --create-namespace -f values.yaml</pre>
+            <div class="notice">
+              <p><strong>A licence is required.</strong> The chart refuses to install without the
+              Secret that holds your licence file, and without the master key you generate — we keep no copy of either.
+              The licence is a signed file we issue per installation; it is checked offline and
+              never calls home.</p>
+              <p>To get one, write to <a href="mailto:hello@runlot.io">hello@runlot.io</a>. An
+              evaluation licence is free for 90 days on a single machine.</p>
+            </div>
+          </section>
+
+          <aside class="col">
+            <h2>What the chart needs</h2>
+            <dl>
+              <dt>Kubernetes</dt><dd>1.30 or newer</dd>
+              <dt>Licence</dt><dd>a Secret with the file we issued</dd>
+              <dt>Master key</dt><dd>a Secret you create with <code>openssl rand -hex 32</code></dd>
+              <dt>PostgreSQL</dt><dd>18, yours, reachable from the cluster</dd>
+              <dt>Object store</dt><dd>any S3-compatible bucket you run</dd>
+              <dt>Data nodes</dt><dd>VMs with the <code>runlot-node</code> package</dd>
+            </dl>
+            <p style="margin-top:20px">The full install, including <code>values.yaml</code> and the
+            node join, is in the <a href="https://docs.runlot.io/docs/self-hosted/helm">self-hosted docs</a>.
+            <code>helm show values runlot/runlot --devel</code> prints the annotated values file.</p>
+          </aside>
+        </div>
+
+        <div class="foot">
+          <span><a href="index.yaml">index.yaml</a></span>
+          <span>chart version = runlot tag</span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="bar">
+      <span>runlot · <a href="mailto:hello@runlot.io">hello@runlot.io</a></span>
+      <span>Charts here are the same bytes attached to each <a href="https://github.com/runlot/runlot/releases">GitHub Release</a>.</span>
+    </div>
+  </footer>
 </body>
 </html>

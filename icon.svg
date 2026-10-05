@@ -1,0 +1,13 @@
+<!-- runlot icon — one square slot (favicon, GitHub avatar, app icon).
+     The glyph is **the same path** as BrandMark in components/brand.tsx. Only
+     the viewBox is widened to -6..30 to give it margin (the ink is 56% of the
+     side). The surface is accent, the glyph is the text colour on top of it
+     (#ffffff, 5.69:1).
+
+     No size is baked in — the favicon uses the same file at 16px and the avatar
+     at 1024px. No rounding either: the browser tab and GitHub each clip it to
+     their own shape. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-6 -6 36 36">
+  <rect x="-6" y="-6" width="36" height="36" fill="#0f6f8f"/>
+  <path d="M20 9V4H4v16h6" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="square" stroke-linejoin="miter"/>
+</svg>
