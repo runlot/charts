@@ -1,0 +1,28 @@
+apiVersion: v1
+entries:
+  runlot:
+  - annotations:
+      runlot.io/profiles: cp-only,full
+      runlot.io/tiers: eval,single,ha
+    apiVersion: v2
+    appVersion: 0.1.0-rc.110
+    created: "2026-10-05T20:26:04.30027+09:00"
+    description: 'Runlot on the customer''s cluster -- one installation per customer,
+      no CRDs, the customer holds the master key. Profile `cp-only` puts the control
+      plane, git and the dashboard in the cluster and leaves the data plane on VMs
+      installed with the runlot-node package; profile `full` adds the data-plane DaemonSet
+      and is behind measurement M1. '
+    digest: 8da35dd3292562d5197e4cb83ba0b95bc7c180d91f6b5550a6216872351df252
+    home: https://runlot.io
+    kubeVersion: '>=1.30.0-0'
+    maintainers:
+    - email: support@runlot.io
+      name: Runlot
+    name: runlot
+    sources:
+    - https://github.com/runlot/runlot
+    type: application
+    urls:
+    - https://charts.runlot.io/charts/charts/runlot-0.1.0-rc.110.tgz
+    version: 0.1.0-rc.110
+generated: "2026-10-05T20:26:04.298209+09:00"
