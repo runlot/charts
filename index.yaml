@@ -5,8 +5,30 @@ entries:
       runlot.io/profiles: cp-only,full
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
+    appVersion: 0.1.0-rc.206
+    created: "2026-11-09T00:32:17.67727333Z"
+    description: 'Runlot on the customer''s cluster -- one installation per customer,
+      no CRDs, the customer holds the master key. Profile `cp-only` puts the control
+      plane, git and the dashboard in the cluster and leaves the data plane on VMs
+      installed with the runlot-node package; profile `full` adds the data-plane DaemonSet
+      and is behind measurement M1. '
+    digest: 8dca84c2ae83eb7d4a5315691d3059fb199d7814f9f7dc92312bf95745fae336
+    home: https://runlot.io
+    kubeVersion: '>=1.30.0-0'
+    maintainers:
+    - email: support@runlot.io
+      name: Runlot
+    name: runlot
+    type: application
+    urls:
+    - https://charts.runlot.io/charts/runlot-0.1.0-rc.206.tgz
+    version: 0.1.0-rc.206
+  - annotations:
+      runlot.io/profiles: cp-only,full
+      runlot.io/tiers: eval,single,ha
+    apiVersion: v2
     appVersion: 0.1.0-rc.205
-    created: "2026-11-08T23:46:49.648422665Z"
+    created: "2026-11-09T00:32:17.675775385Z"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -28,7 +50,7 @@ entries:
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
     appVersion: 0.1.0-rc.204
-    created: "2026-11-08T23:46:49.647400656Z"
+    created: "2026-11-09T00:32:17.672456736Z"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -50,7 +72,7 @@ entries:
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
     appVersion: 0.1.0-rc.203
-    created: "2026-11-08T23:46:49.645907308Z"
+    created: "2026-11-09T00:32:17.670997965Z"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -72,7 +94,7 @@ entries:
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
     appVersion: 0.1.0-rc.202
-    created: "2026-11-08T23:46:49.644256178Z"
+    created: "2026-11-09T00:32:17.66961136Z"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -94,7 +116,7 @@ entries:
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
     appVersion: 0.1.0-rc.201
-    created: "2026-11-08T23:46:49.643246317Z"
+    created: "2026-11-09T00:32:17.668185678Z"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -116,7 +138,7 @@ entries:
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
     appVersion: 0.1.0-rc.200
-    created: "2026-11-08T23:46:49.642244518Z"
+    created: "2026-11-09T00:32:17.666749304Z"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -138,7 +160,7 @@ entries:
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
     appVersion: 0.1.0-rc.199
-    created: "2026-11-08T23:46:49.641218363Z"
+    created: "2026-11-09T00:32:17.664857904Z"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -160,7 +182,7 @@ entries:
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
     appVersion: 0.1.0-rc.198
-    created: "2026-11-08T23:46:49.640152138Z"
+    created: "2026-11-09T00:32:17.662043109Z"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -182,7 +204,7 @@ entries:
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
     appVersion: 0.1.0-rc.197
-    created: "2026-11-08T23:46:49.638389486Z"
+    created: "2026-11-09T00:32:17.660650164Z"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -204,7 +226,7 @@ entries:
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
     appVersion: 0.1.0-rc.196
-    created: "2026-11-08T23:46:49.637003793Z"
+    created: "2026-11-09T00:32:17.659255124Z"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -226,7 +248,7 @@ entries:
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
     appVersion: 0.1.0-rc.195
-    created: "2026-11-08T23:46:49.636001474Z"
+    created: "2026-11-09T00:32:17.657776796Z"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -248,7 +270,7 @@ entries:
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
     appVersion: 0.1.0-rc.194
-    created: "2026-11-08T23:46:49.634974648Z"
+    created: "2026-11-09T00:32:17.656360897Z"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -270,7 +292,7 @@ entries:
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
     appVersion: 0.1.0-rc.193
-    created: "2026-11-08T23:46:49.633943705Z"
+    created: "2026-11-09T00:32:17.653994964Z"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -292,7 +314,7 @@ entries:
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
     appVersion: 0.1.0-rc.192
-    created: "2026-11-08T23:46:49.632691067Z"
+    created: "2026-11-09T00:32:17.651688422Z"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -314,7 +336,7 @@ entries:
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
     appVersion: 0.1.0-rc.191
-    created: "2026-11-08T23:46:49.630785376Z"
+    created: "2026-11-09T00:32:17.650282018Z"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -336,7 +358,7 @@ entries:
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
     appVersion: 0.1.0-rc.190
-    created: "2026-11-08T23:46:49.629752241Z"
+    created: "2026-11-09T00:32:17.648851074Z"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -358,7 +380,7 @@ entries:
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
     appVersion: 0.1.0-rc.189
-    created: "2026-11-08T23:46:49.628724974Z"
+    created: "2026-11-09T00:32:17.64742641Z"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -380,7 +402,7 @@ entries:
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
     appVersion: 0.1.0-rc.186
-    created: "2026-11-08T23:46:49.627713911Z"
+    created: "2026-11-09T00:32:17.645372038Z"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -402,7 +424,7 @@ entries:
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
     appVersion: 0.1.0-rc.185
-    created: "2026-11-08T23:46:49.62667668Z"
+    created: "2026-11-09T00:32:17.642634758Z"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -424,7 +446,7 @@ entries:
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
     appVersion: 0.1.0-rc.184
-    created: "2026-11-08T23:46:49.624757844Z"
+    created: "2026-11-09T00:32:17.641263828Z"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -446,7 +468,7 @@ entries:
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
     appVersion: 0.1.0-rc.183
-    created: "2026-11-08T23:46:49.623608324Z"
+    created: "2026-11-09T00:32:17.639845285Z"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -468,7 +490,7 @@ entries:
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
     appVersion: 0.1.0-rc.182
-    created: "2026-11-08T23:46:49.622611123Z"
+    created: "2026-11-09T00:32:17.638404534Z"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -490,7 +512,7 @@ entries:
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
     appVersion: 0.1.0-rc.181
-    created: "2026-11-08T23:46:49.621597867Z"
+    created: "2026-11-09T00:32:17.636823061Z"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -512,7 +534,7 @@ entries:
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
     appVersion: 0.1.0-rc.180
-    created: "2026-11-08T23:46:49.620536579Z"
+    created: "2026-11-09T00:32:17.633622632Z"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -534,7 +556,7 @@ entries:
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
     appVersion: 0.1.0-rc.179
-    created: "2026-11-08T23:46:49.619062069Z"
+    created: "2026-11-09T00:32:17.632230205Z"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -556,7 +578,7 @@ entries:
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
     appVersion: 0.1.0-rc.178
-    created: "2026-11-08T23:46:49.617189467Z"
+    created: "2026-11-09T00:32:17.630846251Z"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -578,7 +600,7 @@ entries:
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
     appVersion: 0.1.0-rc.177
-    created: "2026-11-08T23:46:49.616144444Z"
+    created: "2026-11-09T00:32:17.62938601Z"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -600,7 +622,7 @@ entries:
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
     appVersion: 0.1.0-rc.176
-    created: "2026-11-08T23:46:49.61513264Z"
+    created: "2026-11-09T00:32:17.627867393Z"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -622,7 +644,7 @@ entries:
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
     appVersion: 0.1.0-rc.175
-    created: "2026-11-08T23:46:49.61410945Z"
+    created: "2026-11-09T00:32:17.62595121Z"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -644,7 +666,7 @@ entries:
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
     appVersion: 0.1.0-rc.174
-    created: "2026-11-08T23:46:49.613041282Z"
+    created: "2026-11-09T00:32:17.623141865Z"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -666,7 +688,7 @@ entries:
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
     appVersion: 0.1.0-rc.173
-    created: "2026-11-08T23:46:49.610949383Z"
+    created: "2026-11-09T00:32:17.621723197Z"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -688,7 +710,7 @@ entries:
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
     appVersion: 0.1.0-rc.172
-    created: "2026-11-08T23:46:49.609904119Z"
+    created: "2026-11-09T00:32:17.620296757Z"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -710,7 +732,7 @@ entries:
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
     appVersion: 0.1.0-rc.171
-    created: "2026-11-08T23:46:49.608833998Z"
+    created: "2026-11-09T00:32:17.618811261Z"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -732,7 +754,7 @@ entries:
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
     appVersion: 0.1.0-rc.170
-    created: "2026-11-08T23:46:49.607801433Z"
+    created: "2026-11-09T00:32:17.617324067Z"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -754,7 +776,7 @@ entries:
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
     appVersion: 0.1.0-rc.169
-    created: "2026-11-08T23:46:49.606726706Z"
+    created: "2026-11-09T00:32:17.614118873Z"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -776,7 +798,7 @@ entries:
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
     appVersion: 0.1.0-rc.168
-    created: "2026-11-08T23:46:49.605099556Z"
+    created: "2026-11-09T00:32:17.612721729Z"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -798,7 +820,7 @@ entries:
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
     appVersion: 0.1.0-rc.166
-    created: "2026-11-08T23:46:49.603628285Z"
+    created: "2026-11-09T00:32:17.611296133Z"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -820,7 +842,7 @@ entries:
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
     appVersion: 0.1.0-rc.165
-    created: "2026-11-08T23:46:49.602618615Z"
+    created: "2026-11-09T00:32:17.609816765Z"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -842,7 +864,7 @@ entries:
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
     appVersion: 0.1.0-rc.164
-    created: "2026-11-08T23:46:49.601609976Z"
+    created: "2026-11-09T00:32:17.608352474Z"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -864,7 +886,7 @@ entries:
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
     appVersion: 0.1.0-rc.163
-    created: "2026-11-08T23:46:49.600578333Z"
+    created: "2026-11-09T00:32:17.606096318Z"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -886,7 +908,7 @@ entries:
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
     appVersion: 0.1.0-rc.162
-    created: "2026-11-08T23:46:49.599218739Z"
+    created: "2026-11-09T00:32:17.603125502Z"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -908,7 +930,7 @@ entries:
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
     appVersion: 0.1.0-rc.161
-    created: "2026-11-08T23:46:49.59731408Z"
+    created: "2026-11-09T00:32:17.601677465Z"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -930,7 +952,7 @@ entries:
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
     appVersion: 0.1.0-rc.160
-    created: "2026-11-08T23:46:49.596294875Z"
+    created: "2026-11-09T00:32:17.600112942Z"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -952,7 +974,7 @@ entries:
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
     appVersion: 0.1.0-rc.159
-    created: "2026-11-08T23:46:49.595246537Z"
+    created: "2026-11-09T00:32:17.598732019Z"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -974,7 +996,7 @@ entries:
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
     appVersion: 0.1.0-rc.158
-    created: "2026-11-08T23:46:49.594192099Z"
+    created: "2026-11-09T00:32:17.597279004Z"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -996,7 +1018,7 @@ entries:
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
     appVersion: 0.1.0-rc.157
-    created: "2026-11-08T23:46:49.59313648Z"
+    created: "2026-11-09T00:32:17.595052453Z"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -1018,7 +1040,7 @@ entries:
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
     appVersion: 0.1.0-rc.156
-    created: "2026-11-08T23:46:49.591360659Z"
+    created: "2026-11-09T00:32:17.592523086Z"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -1040,7 +1062,7 @@ entries:
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
     appVersion: 0.1.0-rc.155
-    created: "2026-11-08T23:46:49.589894861Z"
+    created: "2026-11-09T00:32:17.591104448Z"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -1062,7 +1084,7 @@ entries:
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
     appVersion: 0.1.0-rc.154
-    created: "2026-11-08T23:46:49.588834935Z"
+    created: "2026-11-09T00:32:17.589650831Z"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -1084,7 +1106,7 @@ entries:
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
     appVersion: 0.1.0-rc.153
-    created: "2026-11-08T23:46:49.587693257Z"
+    created: "2026-11-09T00:32:17.588097656Z"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -1106,7 +1128,7 @@ entries:
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
     appVersion: 0.1.0-rc.152
-    created: "2026-11-08T23:46:49.586633802Z"
+    created: "2026-11-09T00:32:17.585923558Z"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -1128,7 +1150,7 @@ entries:
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
     appVersion: 0.1.0-rc.151
-    created: "2026-11-08T23:46:49.585184725Z"
+    created: "2026-11-09T00:32:17.583191315Z"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -1150,7 +1172,7 @@ entries:
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
     appVersion: 0.1.0-rc.150
-    created: "2026-11-08T23:46:49.583419394Z"
+    created: "2026-11-09T00:32:17.581740473Z"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -1172,7 +1194,7 @@ entries:
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
     appVersion: 0.1.0-rc.148
-    created: "2026-11-08T23:46:49.582367771Z"
+    created: "2026-11-09T00:32:17.580364769Z"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -1194,7 +1216,7 @@ entries:
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
     appVersion: 0.1.0-rc.147
-    created: "2026-11-08T23:46:49.581336919Z"
+    created: "2026-11-09T00:32:17.578841923Z"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -1216,7 +1238,7 @@ entries:
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
     appVersion: 0.1.0-rc.146
-    created: "2026-11-08T23:46:49.580271795Z"
+    created: "2026-11-09T00:32:17.577159615Z"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -1238,7 +1260,7 @@ entries:
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
     appVersion: 0.1.0-rc.145
-    created: "2026-11-08T23:46:49.579116747Z"
+    created: "2026-11-09T00:32:17.57391334Z"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -1260,7 +1282,7 @@ entries:
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
     appVersion: 0.1.0-rc.144
-    created: "2026-11-08T23:46:49.577257466Z"
+    created: "2026-11-09T00:32:17.572440087Z"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -1282,7 +1304,7 @@ entries:
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
     appVersion: 0.1.0-rc.143
-    created: "2026-11-08T23:46:49.575779255Z"
+    created: "2026-11-09T00:32:17.571063893Z"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -1304,7 +1326,7 @@ entries:
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
     appVersion: 0.1.0-rc.142
-    created: "2026-11-08T23:46:49.574732309Z"
+    created: "2026-11-09T00:32:17.569628111Z"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -1326,7 +1348,7 @@ entries:
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
     appVersion: 0.1.0-rc.141
-    created: "2026-11-08T23:46:49.573729508Z"
+    created: "2026-11-09T00:32:17.568103097Z"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -1348,7 +1370,7 @@ entries:
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
     appVersion: 0.1.0-rc.140
-    created: "2026-11-08T23:46:49.572699167Z"
+    created: "2026-11-09T00:32:17.566320022Z"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -1370,7 +1392,7 @@ entries:
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
     appVersion: 0.1.0-rc.139
-    created: "2026-11-08T23:46:49.57121318Z"
+    created: "2026-11-09T00:32:17.563416904Z"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -1392,7 +1414,7 @@ entries:
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
     appVersion: 0.1.0-rc.138
-    created: "2026-11-08T23:46:49.569415755Z"
+    created: "2026-11-09T00:32:17.562002717Z"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -1414,7 +1436,7 @@ entries:
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
     appVersion: 0.1.0-rc.137
-    created: "2026-11-08T23:46:49.568394918Z"
+    created: "2026-11-09T00:32:17.560515775Z"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -1436,7 +1458,7 @@ entries:
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
     appVersion: 0.1.0-rc.136
-    created: "2026-11-08T23:46:49.567356625Z"
+    created: "2026-11-09T00:32:17.559067732Z"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -1458,7 +1480,7 @@ entries:
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
     appVersion: 0.1.0-rc.135
-    created: "2026-11-08T23:46:49.566313885Z"
+    created: "2026-11-09T00:32:17.557585971Z"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -1480,7 +1502,7 @@ entries:
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
     appVersion: 0.1.0-rc.134
-    created: "2026-11-08T23:46:49.565255241Z"
+    created: "2026-11-09T00:32:17.5543194Z"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -1502,7 +1524,7 @@ entries:
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
     appVersion: 0.1.0-rc.133
-    created: "2026-11-08T23:46:49.563344543Z"
+    created: "2026-11-09T00:32:17.552701785Z"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -1524,7 +1546,7 @@ entries:
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
     appVersion: 0.1.0-rc.132
-    created: "2026-11-08T23:46:49.561761725Z"
+    created: "2026-11-09T00:32:17.55062094Z"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -1546,7 +1568,7 @@ entries:
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
     appVersion: 0.1.0-rc.131
-    created: "2026-11-08T23:46:49.56074898Z"
+    created: "2026-11-09T00:32:17.549187321Z"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -1568,7 +1590,7 @@ entries:
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
     appVersion: 0.1.0-rc.130
-    created: "2026-11-08T23:46:49.55973255Z"
+    created: "2026-11-09T00:32:17.547697557Z"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -1590,7 +1612,7 @@ entries:
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
     appVersion: 0.1.0-rc.129
-    created: "2026-11-08T23:46:49.558675218Z"
+    created: "2026-11-09T00:32:17.545621329Z"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -1612,7 +1634,7 @@ entries:
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
     appVersion: 0.1.0-rc.128
-    created: "2026-11-08T23:46:49.557194613Z"
+    created: "2026-11-09T00:32:17.542792095Z"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -1634,7 +1656,7 @@ entries:
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
     appVersion: 0.1.0-rc.127
-    created: "2026-11-08T23:46:49.555396253Z"
+    created: "2026-11-09T00:32:17.541394922Z"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -1656,7 +1678,7 @@ entries:
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
     appVersion: 0.1.0-rc.126
-    created: "2026-11-08T23:46:49.554325812Z"
+    created: "2026-11-09T00:32:17.539954034Z"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -1678,7 +1700,7 @@ entries:
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
     appVersion: 0.1.0-rc.125
-    created: "2026-11-08T23:46:49.553238715Z"
+    created: "2026-11-09T00:32:17.538503946Z"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -1700,7 +1722,7 @@ entries:
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
     appVersion: 0.1.0-rc.124
-    created: "2026-11-08T23:46:49.552144268Z"
+    created: "2026-11-09T00:32:17.536736344Z"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -1722,7 +1744,7 @@ entries:
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
     appVersion: 0.1.0-rc.123
-    created: "2026-11-08T23:46:49.550669362Z"
+    created: "2026-11-09T00:32:17.533509563Z"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -1744,7 +1766,7 @@ entries:
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
     appVersion: 0.1.0-rc.122
-    created: "2026-11-08T23:46:49.54829522Z"
+    created: "2026-11-09T00:32:17.532068638Z"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -1766,7 +1788,7 @@ entries:
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
     appVersion: 0.1.0-rc.121
-    created: "2026-11-08T23:46:49.547104449Z"
+    created: "2026-11-09T00:32:17.530620437Z"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -1788,7 +1810,7 @@ entries:
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
     appVersion: 0.1.0-rc.120
-    created: "2026-11-08T23:46:49.546032365Z"
+    created: "2026-11-09T00:32:17.529158287Z"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -1810,7 +1832,7 @@ entries:
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
     appVersion: 0.1.0-rc.119
-    created: "2026-11-08T23:46:49.544911538Z"
+    created: "2026-11-09T00:32:17.527593808Z"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -1832,7 +1854,7 @@ entries:
       runlot.io/tiers: eval,single,ha
     apiVersion: v2
     appVersion: 0.1.0-rc.110
-    created: "2026-11-08T23:46:49.543789961Z"
+    created: "2026-11-09T00:32:17.523912271Z"
     description: 'Runlot on the customer''s cluster -- one installation per customer,
       no CRDs, the customer holds the master key. Profile `cp-only` puts the control
       plane, git and the dashboard in the cluster and leaves the data plane on VMs
@@ -1851,4 +1873,4 @@ entries:
     urls:
     - https://charts.runlot.io/charts/runlot-0.1.0-rc.110.tgz
     version: 0.1.0-rc.110
-generated: "2026-11-08T23:46:49.542332991Z"
+generated: "2026-11-09T00:32:17.52212183Z"
